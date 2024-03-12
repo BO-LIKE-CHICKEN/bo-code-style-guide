@@ -1,6 +1,4 @@
-# 변수명 규칙
-
-## 변수명 및 상수명 규칙
+# 변수명 및 상수명 규칙
 
 1. **변수명**: 카멜케이스(CamelCase) 사용
    예: `userProfile`, `isLoading`
@@ -24,7 +22,7 @@
 2.  **복수형(Plural)**: 여러 항목을 나타낼 때는 주로 `s`, `es`, `ves` 등을 붙여 복수형을 만듭니다. 정확한 접미사는 단어에 따라 다르며, 일반적인 영어 문법 규칙을 따릅니다.
     예: `users`, `items`, `categories`
 
-### 배열을 순회하는 경우의 명명 규칙
+## 배열을 순회하는 경우의 명명 규칙
 
 배열을 순회하면서 각 요소에 대해 작업을 수행할 때는, 되도록 배열의 이름을 복수형으로, 각 요소의 이름을 해당 복수형에 맞는 단수형으로 명명합니다.
 
@@ -35,9 +33,6 @@ const userNames = users.map((user) => user.name);
 ## `Number` 변수명 규칙
 
 `Number` 타입의 변수명을 지을 때는 다음의 업데이트된 규칙을 따릅니다
-
-1. 1,000 이상의 숫자를 코드에서 작성해야 할시에는, 대신에 [Numeric Separators(`_`)](https://v8.dev/features/numeric-separators)를 이용합니다.
-   **단, [호환성](https://caniuse.com/mdn-javascript_grammar_numeric_separators)을 반드시 고려해야 합니다.**
 
 ## `Boolean` 변수명 규칙
 
@@ -60,3 +55,8 @@ const userNames = users.map((user) => user.name);
    const checked = true;
    const active = true;
    ```
+
+# 기타 규칙
+
+1. 1,000 이상의 숫자를 코드에서 작성해야 할시에는, 대신에 [Numeric Separators(`_`)](https://v8.dev/features/numeric-separators)를 이용합니다.
+   **단, [호환성](https://caniuse.com/mdn-javascript_grammar_numeric_separators)을 반드시 고려해야 합니다.**
