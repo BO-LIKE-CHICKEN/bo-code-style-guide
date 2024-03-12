@@ -12,7 +12,7 @@
    const MAX_RETRY_COUNT = 5;
    ```
 
-   **\런타임에 변경될 있는 상수라면 변수명 규칙을 따릅니다.**
+   **런타임에 변경될 있는 상수라면 변수명 규칙을 따릅니다.**
 
 ## 단수와 복수의 구분
 
@@ -31,6 +31,13 @@
 ```js
 const userNames = users.map((user) => user.name);
 ```
+
+## `Number` 변수명 규칙
+
+`Number` 타입의 변수명을 지을 때는 다음의 업데이트된 규칙을 따릅니다
+
+1. 1,000 이상의 숫자를 코드에서 작성해야 할시에는, 대신에 [Numeric Separators(`_`)](https://v8.dev/features/numeric-separators)를 이용합니다.
+   **단, [호환성](https://caniuse.com/mdn-javascript_grammar_numeric_separators)을 반드시 고려해야 합니다.**
 
 ## `Boolean` 변수명 규칙
 
