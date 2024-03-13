@@ -58,5 +58,11 @@ const userNames = users.map((user) => user.name);
 
 # 기타 규칙
 
-1. 1,000 이상의 숫자를 코드에서 작성해야 할시에는, 대신에 [Numeric Separators(`_`)](https://v8.dev/features/numeric-separators)를 이용합니다.
-   **단, [호환성](https://caniuse.com/mdn-javascript_grammar_numeric_separators)을 반드시 고려해야 합니다.**
+<!-- 우선 순위에 따라 정렬하거나 따로 그룹화가 필요 -->
+
+- 1,000 이상의 숫자를 코드에서 작성해야 할시에는, 대신에 [Numeric Separators(`_`)](https://v8.dev/features/numeric-separators)를 이용합니다.
+  **단, [호환성](https://caniuse.com/mdn-javascript_grammar_numeric_separators)을 반드시 고려해야 합니다.**
+
+- 모든 구문의 끝에는 세미콜론(;)을 붙인다.
+
+- 정말로 예외적인 케이스를 제외하고는 `const` 키워드로 변수를 선언한다.
